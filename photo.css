@@ -1,5 +1,5 @@
 body{
-    background-color:rosybrown;
+
 }
 #fotogaleria{
     text-align: center;
@@ -21,7 +21,6 @@ li {
   }
 
 a{
-    color: white;
     font-variant: small-caps;
     font-size: 22px;
     text-decoration: none;

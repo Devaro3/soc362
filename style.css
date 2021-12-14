@@ -1,14 +1,34 @@
 body{
-    background-color:rosybrown;
+    height: 100%;
+    margin: 0;
+    
 }
+
 #nadpis{
     text-align: center;
+    text-transform: uppercase;
 }
 
 #obsah{
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: -20px;
+}
+
+#zaciatok{
+    width: 40%;
+}
+
+#zaciatok_popis{
+    padding: 15px;
+    margin-right: 20px;
+}
+
+#blog{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    width: 70%;
 }
 
 ul {
@@ -21,19 +41,33 @@ li {
   }
 
 a{
-    color: white;
+
     font-variant: small-caps;
     font-size: 22px;
     text-decoration: none;
 }
 
+#counter{
+    position: fixed;
+    right: 100px;
+    top: 200px;
 
-address{
-    display: flex;
-    justify-content: flex-start;
 
 }
 
-address, #obsah, ul {
+#obsah, ul {
     padding-left: 20px;
+}
+
+#kontakty{
+    display: flex;
+    justify-content: center;
+}
+#nadpis_kontakty{
+    display: flex;
+    justify-content: center;
+}
+
+.foot_icon{
+    padding: 10px;
 }
