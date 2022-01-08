@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Sočka - Pult 362</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/favicon.png">
+</head>
+
+<body id="body">
+
+    <h1 id="nadpis">Stredoškolská odborná činnosť - Pult Esa 362 pre simulátor Train Simulator</h1>
+
+    <header>
+        <ul>
+            <li class="navig"><a class="active" href="#home">Domov</a></li>
+            <li class="navig"><a href="gallery.html">Fotogaléria</a></li>
+            <li class="navig"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <section id="zaciatok">
+        <p class="clanok" id="zaciatok_popis">Myslím, že by som na začiatok mal povedať, prečo som si vybral práve túto "sočku". Už 3 roky študujem na Strednej Priemyselnej škole Dopravnej v Trnave. O vlaky som sa do strednej veľmi nezaujímal, čo sa zmenilo, keď som spoznal spolužiakov, ktorí
+            boli do vlakov zažratí. Začali sme spolu hrávať simulátor, no po pár dňoch ma to prestávalo baviť. Klikať na tlačitka vo vlaku myšou nie je žiadna zábava. Tak mi napadlo, že by som si mohol vyrobiť niečo podobné, ako je trenažér na auto. Lenže
+            na vlak. No a tak vznikla moja sočka, ktorú verím, že dokončím, aj keď nás ubíja korona, kvôli ktorej som sa dlho nevedel dostať do školy.
+        </p>
+    </section>
+
+
+    <div id="blog">
+        <ol>
+            <li>
+                <p class="clanok" id="clanok1">Rozmýšľali sme, akého inštruktora si vyberieme. Spýtali sme sa pána riaditeľa, a nášho triedneho pána učiteľa. Obaja súhlasili. Vypracoval som zoznam potrebných súčiastok (svetiel, pák, prepínačov, atď...) Náš pán triedny učiteľ momentálne
+                    zháňa všetky tieto potrebné veci. </p>
+            </li>
+            <li>
+                <p class="clanok" id="clanok2">Princíp fungovania je nasledovný: Ku Arduinu sú pripojené spínače, prepínače, tlačítka, kontrolky, páky. Tie vysielajú elektrický impulz, ktorý arduino číta. Následne pošle informáciu a stlačení cez Telnet (protokol) po sieti na PC, kde
+                    beží server a hra. Údaje o meracích prístrojoch zasa server číta z hry a posiela informácie Arduino, ktorý ovláda ručičky týchto meracích prístrojov servo motormi. Kontrolky a displej sú pripojené ku Raspberry Pi Zero WH, server rovnako
+                    posiela údaje, a Raspberry ich zobrazuje na displeji a rozsvecuje kontrolky.</p>
+                <img id="topologia" src="topologia.png" alt="Topológia zapojenia" style="width: 60%;">
+
+            </li>
+            <li>
+                <p class="clanok" id="clanok3">Nechal som sa inšpirovať <a href="https://www.youtube.com/watch?v=p-Ftj1BDMz8" target="_blank">týmto videom</a>. Dozvedel som sa však, že v Českej Třebovej je to poskladané z originálnych dielov, ktoré sa nám určite do rúk nedostanú. Tak
+                    sme to začali vyrábať. Postupne sme nakúpili železo na rám, ktorý sa zvaril dokopy. Dali sa naňho dosky, ktoré sú oblepené koženkou. Sú v nich vyvŕtané rôzne diery na všetky tlačítka a meráky.</p>
+            </li>
+
+        </ol>
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="track"></div>
+                <div class="train">
+                    <div class="front"></div>
+                    <div class="wheels">
+                        <div class="smallOne"></div>
+                        <div class="smallTwo"></div>
+                        <div class="smallThree"></div>
+                        <div class="smallFour"></div>
+                        <div class="smallFive"></div>
+                        <div class="smallSix"></div>
+                        <div class="big"></div>
+                    </div>
+                    <div class="cord"></div>
+                    <div class="coach"></div>
+                    <div class="coachTwo"></div>
+                    <div class="windows"></div>
+
+
+                    <div id="up" class="steam"></div>
+                    <div id="up" class="steam2"></div>
+                    <div id="up" class="steam3"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
